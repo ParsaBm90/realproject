@@ -1,0 +1,621 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Main.aspx.cs" Inherits="Main" %>
+
+<!DOCTYPE html dir="rtl">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>دنیای ماگ</title>
+    <link href="Content/UiVerse.css" rel="stylesheet" />
+    <link href="Content/all.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="Content/MugVerse.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-sm border-bottom fixed-top Color navbar-dark w-75 mx-auto rounded-2">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MugVerse</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Facilities">امکانات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#art">طرح ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal">تماس با ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#AboutUs">درباره ما</a>
+                        </li>
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link</a></li>
+                                <li><a class="dropdown-item" href="#">Another link</a></li>
+                                <li><a class="dropdown-item" href="#">A third link</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="modal modal-dialog modal-sm khodam" id="myModal">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">تماس با ما</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h3>شماره برای ارتباط با ما</h3>
+                        <p>
+                            <a href="#">
+                                0912-345-6789 <span class="fa fa-mobile-screen-button"></span>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#">
+                                011-0000-000 <span class="fa fa-phone-alt"></span>
+                            </a>
+                        </p>
+                        <h3>آدرس فروشگاه</h3>
+                        <p>
+                            ساری - خیابان فرهنگ - روبروی مغازه هرکسی وایسی اوکیه
+                        </p>
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger container Color1" data-bs-dismiss="modal">خروج</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Width75 height-auto mx-auto">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner rounded-2">
+                    <div class="carousel-item active">
+                        <img src="Images/Farayane_20251128_234152509.jpeg" class="d-block h-50" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/Farayane_20221223_205626442.jpg" class="d-block  h-50" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/Farayane_20221018_115326833.jpg" class="d-block h-50" style="width:100%">
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <div class="container height-auto mt-4" id="Facilities">
+                <div class="row">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-sm-6 col-12 mt-2">
+                        <div class="col-12 h350 pt-3 Matn">
+                            <div class="Picture mx-auto">
+                                <img src="Images/icons8_cup_512px_1.png" class="w-100 h-100" />
+                            </div>
+                            <p>
+                                انواع ماگ با<br /> طرح های مختلف
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-sm-6 col-12 mt-2">
+                        <div class="col-12 h350 pt-3 Matn">
+                            <div class="Picture mx-auto">
+                                <img src="Images/icons8_wine_bar_512px.png" class="w-100 h-100" />
+                            </div>
+                            <p>
+                                انواع لیوان با<br /> طرح های مختلف
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-sm-6 col-12 mt-2">
+                        <div class="col-12 h350 pt-3 Matn">
+                            <div class="Picture mx-auto">
+                                <img src="Images/icons8_paint_palette_512px_1.png" class="w-100 h-100" />
+                            </div>
+                            <p>
+                                لیوان یا ماگ با<br /> طرح دلخواه شما
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-sm-6 col-12 mt-2">
+                        <div class="col-12 h350 pt-3 Matn">
+                            <div class="Picture mx-auto">
+                                <img src="Images/icons8_truck_480px.png" class="w-100 h-100" />
+                            </div>
+                            <p>
+                                ارسال به درب منزل
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-fluid height-auto mt-2">
+
+                <div class="row">
+                    <div class="col-12 height-auto text-center" id="art">
+                        <p class="Arts">
+                            طرح ها
+                        </p>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt-2">
+                        <div class="col-12 h350">
+                            <!-- From Uiverse.io by kennyotsu -->
+                            <div class="containe noselect">
+                                <div class="canvas">
+                                    <div class="tracker tr-1"></div>
+                                    <div class="tracker tr-2"></div>
+                                    <div class="tracker tr-3"></div>
+                                    <div class="tracker tr-4"></div>
+                                    <div class="tracker tr-5"></div>
+                                    <div class="tracker tr-6"></div>
+                                    <div class="tracker tr-7"></div>
+                                    <div class="tracker tr-8"></div>
+                                    <div class="tracker tr-9"></div>
+                                    <div class="tracker tr-10"></div>
+                                    <div class="tracker tr-11"></div>
+                                    <div class="tracker tr-12"></div>
+                                    <div class="tracker tr-13"></div>
+                                    <div class="tracker tr-14"></div>
+                                    <div class="tracker tr-15"></div>
+                                    <div class="tracker tr-16"></div>
+                                    <div class="tracker tr-17"></div>
+                                    <div class="tracker tr-18"></div>
+                                    <div class="tracker tr-19"></div>
+                                    <div class="tracker tr-20"></div>
+                                    <div class="tracker tr-21"></div>
+                                    <div class="tracker tr-22"></div>
+                                    <div class="tracker tr-23"></div>
+                                    <div class="tracker tr-24"></div>
+                                    <div class="tracker tr-25"></div>
+                                    <div id="card">
+                                        <div class="Photo">
+                                            <img src="Images/download.jpg" class="Photo" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt-2">
+                        <div class="col-12 h350">
+                            <div class="containe noselect">
+                                <div class="canvas">
+                                    <div class="tracker tr-1"></div>
+                                    <div class="tracker tr-2"></div>
+                                    <div class="tracker tr-3"></div>
+                                    <div class="tracker tr-4"></div>
+                                    <div class="tracker tr-5"></div>
+                                    <div class="tracker tr-6"></div>
+                                    <div class="tracker tr-7"></div>
+                                    <div class="tracker tr-8"></div>
+                                    <div class="tracker tr-9"></div>
+                                    <div class="tracker tr-10"></div>
+                                    <div class="tracker tr-11"></div>
+                                    <div class="tracker tr-12"></div>
+                                    <div class="tracker tr-13"></div>
+                                    <div class="tracker tr-14"></div>
+                                    <div class="tracker tr-15"></div>
+                                    <div class="tracker tr-16"></div>
+                                    <div class="tracker tr-17"></div>
+                                    <div class="tracker tr-18"></div>
+                                    <div class="tracker tr-19"></div>
+                                    <div class="tracker tr-20"></div>
+                                    <div class="tracker tr-21"></div>
+                                    <div class="tracker tr-22"></div>
+                                    <div class="tracker tr-23"></div>
+                                    <div class="tracker tr-24"></div>
+                                    <div class="tracker tr-25"></div>
+                                    <div id="card">
+                                        <div class="Photo">
+                                            <img src="Images/images (1).jpg" class="Photo" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt-2">
+                        <div class="col-12 h350">
+                            <div class="containe noselect">
+                                <div class="canvas">
+                                    <div class="tracker tr-1"></div>
+                                    <div class="tracker tr-2"></div>
+                                    <div class="tracker tr-3"></div>
+                                    <div class="tracker tr-4"></div>
+                                    <div class="tracker tr-5"></div>
+                                    <div class="tracker tr-6"></div>
+                                    <div class="tracker tr-7"></div>
+                                    <div class="tracker tr-8"></div>
+                                    <div class="tracker tr-9"></div>
+                                    <div class="tracker tr-10"></div>
+                                    <div class="tracker tr-11"></div>
+                                    <div class="tracker tr-12"></div>
+                                    <div class="tracker tr-13"></div>
+                                    <div class="tracker tr-14"></div>
+                                    <div class="tracker tr-15"></div>
+                                    <div class="tracker tr-16"></div>
+                                    <div class="tracker tr-17"></div>
+                                    <div class="tracker tr-18"></div>
+                                    <div class="tracker tr-19"></div>
+                                    <div class="tracker tr-20"></div>
+                                    <div class="tracker tr-21"></div>
+                                    <div class="tracker tr-22"></div>
+                                    <div class="tracker tr-23"></div>
+                                    <div class="tracker tr-24"></div>
+                                    <div class="tracker tr-25"></div>
+                                    <div id="card">
+                                        <div class="Photo">
+
+                                            <img src="Images/images (3).jpg" class="Photo" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt-2">
+                        <div class="col-12 h350">
+                            <div class="containe noselect">
+                                <div class="canvas">
+                                    <div class="tracker tr-1"></div>
+                                    <div class="tracker tr-2"></div>
+                                    <div class="tracker tr-3"></div>
+                                    <div class="tracker tr-4"></div>
+                                    <div class="tracker tr-5"></div>
+                                    <div class="tracker tr-6"></div>
+                                    <div class="tracker tr-7"></div>
+                                    <div class="tracker tr-8"></div>
+                                    <div class="tracker tr-9"></div>
+                                    <div class="tracker tr-10"></div>
+                                    <div class="tracker tr-11"></div>
+                                    <div class="tracker tr-12"></div>
+                                    <div class="tracker tr-13"></div>
+                                    <div class="tracker tr-14"></div>
+                                    <div class="tracker tr-15"></div>
+                                    <div class="tracker tr-16"></div>
+                                    <div class="tracker tr-17"></div>
+                                    <div class="tracker tr-18"></div>
+                                    <div class="tracker tr-19"></div>
+                                    <div class="tracker tr-20"></div>
+                                    <div class="tracker tr-21"></div>
+                                    <div class="tracker tr-22"></div>
+                                    <div class="tracker tr-23"></div>
+                                    <div class="tracker tr-24"></div>
+                                    <div class="tracker tr-25"></div>
+                                    <div id="card">
+                                        <div class="Photo">
+                                            <img src="Images/images.jpg" class="Photo" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-12 h600">
+                        <!-- From Uiverse.io by ilkhoeri -->
+                        <div class="wrapper">
+                            <div class="inner" style="--quantity: 10;">
+                                <div class="car" style="--index: 0;--color-card: 142, 249, 252;">
+                                    <div class="img">
+                                        <img src="Images/MugSlider/013460d7-ecd4-4e0b-ac99-bc2aa4a795fc.png" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="car" style="--index: 1;--color-card: 142, 252, 204;">
+                                    <div class="img">
+                                        <img src="Images/MugSlider/19e72792-a16d-4bca-bf80-6b727144d04e.png" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="car" style="--index: 2;--color-card: 142, 252, 157;">
+                                    <div class="img">
+                                        <img src="Images/MugSlider/50cdf2f9-b164-49c1-bce7-6bfe2c089c52.png" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="car" style="--index: 3;--color-card: 215, 252, 142;">
+                                    <div class="img">
+                                        <img src="Images/MugSlider/589b5b8d-99ec-4b43-a8cf-bf76a1bf278d.png" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="car" style="--index: 4;--color-card: 252, 252, 142;">
+                                    <div class="img">
+                                        <img src="Images/MugSlider/74784329-33bc-432a-9dc0-e5aaf26da4d2.png" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="car" style="--index: 5;--color-card: 252, 208, 142;">
+                                    <div class="img">
+                                        <img src="Images/MugSlider/9dbdf54a-780f-47c6-86ff-e216d5407af9.png" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="car" style="--index: 6;--color-card: 252, 142, 142;">
+                                    <div class="img">
+                                        <img src="Images/MugSlider/b12197fe-3874-42bc-8719-9095a6b709c5.png" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="car" style="--index: 7;--color-card: 252, 142, 239;">
+                                    <div class="img">
+                                        <img src="Images/MugSlider/d166fc91-5faa-4db3-8424-0f1e768c4ebf.png" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="car" style="--index: 8;--color-card: 204, 142, 252;">
+                                    <div class="img">
+                                        <img src="Images/MugSlider/dc4c6993-d78b-4d1b-93a0-4b82abf49bd4.png" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="car" style="--index: 9;--color-card: 142, 202, 252;">
+                                    <div class="img">
+                                        <img src="Images/MugSlider/f8fb0c47-7732-422e-8456-b3eb2c94d644.png" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-sm-12 col-12 height-auto mt--1 text-center">
+                        <p class="Arts" id="AboutUs">
+                            درباره ما
+                        </p>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-12 col-12 mt-2">
+                        <div class="col-12 h350">
+                            <!-- From Uiverse.io by Tiagoadag -->
+                            <div class="card2">
+                                <div class="card3 pt-2">
+                                    <div class="w-100 heightFont">
+                                        <div class="rounded-circle h-100 width80px ColorHover">
+
+                                            <span class="fa fa-contact-card fa-beat ColorWhite fa-2x">
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="White mt-2">
+                                        تجربه
+                                    </p>
+                                    <p class="White b-Nazanin w-75 mx-auto">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-12 col-12 mt-2">
+                        <div class="col-12 h350">
+                            <!-- From Uiverse.io by Tiagoadag -->
+                            <div class="card2">
+                                <div class="card3 pt-2">
+                                    <div class="w-100 heightFont">
+                                        <div class="rounded-circle h-100 width80px ColorHover">
+
+                                            <span class="fa fa-calendar-check fa-beat ColorWhite fa-2x">
+
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <p class="White mt-2">
+                                        قابلیت ها
+                                    </p>
+                                    <div class="h80 divUl mx-auto b-Nazanin">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    ساخت لیوان
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    ساخت ماگ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    ماگ طرح دلخواه شما
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    ارسال به درب منزل
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-12 col-12 mt-2">
+                        <div class="col-12 h350">
+                            <!-- From Uiverse.io by Tiagoadag -->
+                            <div class="card2">
+                                <div class="card3 pt-2">
+                                    <div class="w-100 heightFont">
+                                        <div class="rounded-circle h-100 width80px ColorHover">
+                                            <span class="fa fa-newspaper fa-beat ColorWhite fa-2x">
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="White mt-2">
+                                        توانایی ها
+                                    </p>
+                                    <div class="h80 divUl mx-auto b-Nazanin divUl1 mt-3">
+                                        <ul class="mt-4">
+                                            <li>
+                                                <a href="#">
+                                                    جاپ دقیق و ماندگار روی ماگ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    طراحی خلاق و اختصاصی
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    ارسال سریع در بسته بندی ایمن
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 height-auto text-center" id="art">
+                        <p class="Arts">
+                            راه های ارتباط و ثبت سفارش در فضای مجازی
+                        </p>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-12 col-12 mt-3">
+                        <div class="col-12 h350 pt--1">
+
+                            <div class="CircleIcon rounded-circle mx-auto">
+                                <a href="#">
+                                    <span class="fab fa-instagram fa-5x White1">
+
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-12 col-12 mt-3">
+                        <div class="col-12 h350 pt--1">
+
+                            <div class="CircleIcon rounded-circle mx-auto">
+                                <a href="#">
+                                    <span class="fa fa-paper-plane fa-4x ms-2 White1 mt-3">
+
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-12 col-12 mt-3">
+                        <div class="col-12 h350">
+                            <div class="col-12 h350 pt--1">
+
+                                <div class="CircleIcon rounded-circle mx-auto">
+                                    <a href="#">
+                                        <span class="fab fa-whatsapp fa-5x White1">
+
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <footer>
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-sm-12 col-12 bg-dark">
+                <div class="col-12 h350  bg-dark">
+                    <div class="row">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12 col-12 ">
+                            <div class="col-12 h350 DivUlFooterRight bg-dark">
+
+                                <ul>
+                                    <li class="gang">
+                                        <p>
+                                            لورم ایپسوم
+                                        </p>
+                                    </li>
+                                    <li class="mt-5">
+                                        <a href="#">
+                                            <span class="fa fa-chevron-left White sizeFont"></span> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        </a>
+                                    </li>
+                                    <li class="mt-3">
+                                        <a href="#">
+                                            <span class="fa fa-chevron-left White sizeFont"></span> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        </a>
+                                    </li>
+                                    <li class="mt-3">
+                                        <a href="#">
+                                            <span class="fa fa-chevron-left White sizeFont"></span> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        </a>
+                                    </li>
+                                    <li class="mt-3">
+                                        <a href="#">
+                                            <span class="fa fa-chevron-left White sizeFont"></span>  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        </a>
+                                    </li>
+                                    <li class="mt-3">
+                                        <a href="#">
+                                            <span class="fa fa-chevron-left White sizeFont"></span>  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12 col-12 ">
+                            <div class="col-12 h350 pt-3 text-center bg-dark border border-bottom">
+                                <!-- From Uiverse.io by coslac -->
+                                <h6 class="White text-center">
+                                    برای عضویت در خبرنامه فروشگاه دنیای ماگ<br /> شماره تماس خود را وارد نمائید
+                                </h6>
+                                <div class="input-container w-75 mx-auto mt-4">
+                                    <input placeholder="شماره موبایل" type="text" />
+                                </div>
+
+                                <!-- From Uiverse.io by Navarog21 -->
+                                <button class="button123 mt-5">
+                                    تایید
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-12 h20 bg-secondary">
+                                <p>
+                                    .This WebSite Developed By <a href="#">ParsaBigham</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="Scripts/bootstrap.bundle.js"></script>
+    </form>
+</body>
+</html>

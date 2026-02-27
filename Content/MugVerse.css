@@ -1,0 +1,319 @@
+﻿body {
+    direction: rtl;
+}
+
+.Color {
+    background-color: rgba(0, 0, 0, 0.52);
+}
+
+.Width75 {
+    width: 75%;
+}
+
+.height-auto {
+    min-height: 10px;
+}
+
+.h350 {
+    height: 300px;
+}
+
+.Picture {
+    width: 150px;
+    height: 150px;
+    transition: all 0.5s;
+}
+
+    .Picture:hover {
+        transform: scale(0.8);
+        transition: all 0.5s;
+    }
+
+.Matn {
+    text-align: center;
+}
+
+    .Matn p {
+        margin-top: 20px;
+        font-weight: 400;
+        transition: all 0.5s;
+    }
+
+        .Matn p:hover {
+            color: red;
+            transition: all 0.5s;
+            transform: translateY(-5px);
+        }
+
+.modal-body p {
+    text-align: center;
+}
+
+    .modal-body p a {
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.Color1 {
+    background: linear-gradient(20deg,red,#b200ff);
+}
+
+.width288 {
+    width: 288px;
+}
+
+.Arts {
+    font-size: 22px;
+}
+
+.Photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+}
+
+.h600 {
+    height: 600px;
+}
+
+.khodam {
+    position: fixed;
+    top: 30px;
+    right: 629px;
+}
+
+.mt--1 {
+    margin-top: -100px;
+}
+
+.heightFont {
+    height: 80px;
+}
+
+.containe {
+    /*margin-left:0px;margin-right:100px*/ margin-right: auto;
+    margin-left: auto;
+}
+
+.width264 {
+    width: 264px;
+}
+
+.card2 {
+    transition: all 1s;
+    /*margin-right: auto;
+    margin-left: auto;*/
+    /*top: 10px;*/
+}
+
+    .card2:hover {
+        position: relative;
+        margin-top: -20px;
+        /*top: -30px;*/
+        transition: all 1s;
+    }
+
+.ColorHover {
+    background-color: rgba(58, 58, 58, 0.96);
+    text-align: center;
+    transition: all 1s;
+}
+
+.card2:hover .ColorHover {
+    background-color: white;
+    transition: all 1s;
+}
+
+.card2:hover .ColorWhite {
+    color: black;
+    transition: all 1s;
+}
+
+.ColorWhite {
+    color: white;
+    transition: all 1s;
+}
+
+.ColorHover span {
+    margin-top: 23.5px;
+}
+
+.width80px {
+    width: 80px;
+    margin: auto;
+}
+
+.card3 {
+    text-align: center;
+}
+
+.b-Nazanin {
+    font-family: 'B Nazanin';
+}
+
+.h80 {
+    height: 80px;
+}
+
+.divUl {
+    width: 90%;
+}
+
+    .divUl ul {
+        list-style: none;
+        width: 100%;
+    }
+
+        .divUl ul li {
+            background-color: #525252;
+            min-height: 20px;
+            margin-right: -31px;
+            margin-top: 3px;
+            width: 168px;
+            border-radius: 10px;
+            line-height: -10px;
+        }
+
+            .divUl ul li:hover {
+                background-color: #878787;
+            }
+
+            .divUl ul li a {
+                text-decoration: none;
+                color: white;
+                display: block;
+            }
+
+.divUl1 ul li {
+    margin-top: 10px;
+}
+
+.pt--1 {
+    padding-top: 75px;
+}
+
+.White1 {
+    color: white;
+    transition: all 1s;
+}
+
+.CircleIcon {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(58, 58, 58, 0.96);
+    text-align: center;
+    transition: all 1s;
+    padding-top: 35px;
+}
+
+    .CircleIcon a {
+        display: block;
+    }
+
+    .CircleIcon:hover {
+        background: radial-gradient(#cacaca,#525252);
+        border: 1px solid black;
+        transition: all 1s;
+    }
+
+        .CircleIcon:hover .White1 {
+            color: black;
+            transition: all 1s;
+        }
+
+.White {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+
+@media(max-width:350px) {
+    .khodam {
+        right: 0%;
+    }
+}
+
+@media(max-width:756px) {
+    .khodam {
+        right: auto;
+        left: auto;
+    }
+}
+
+
+footer {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 1px;
+}
+
+.h20 {
+    height: 40px;
+    text-align: center;
+}
+
+    .h20 p {
+        color: white;
+    }
+
+        .h20 p a {
+            color: #c9c9c9;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+.sizeFont {
+    font-size: 10px;
+}
+
+.gang {
+    color: white;
+    text-align: center;
+    font-family: 'B Nazanin';
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.DivUlFooterRight ul {
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    .DivUlFooterRight ul li {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0px;
+        height: 25px;
+        transition: all 1s;
+    }
+
+        .DivUlFooterRight ul li:hover {
+            word-spacing: 4px;
+            width: 95%;
+            transition: all 1s;
+        }
+
+        .DivUlFooterRight ul li.gang:hover {
+            word-spacing: 0.5px;
+        }
+
+        .DivUlFooterRight ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
